@@ -3,8 +3,10 @@ import { Student } from "./clases/Student";
 import { IPublisher } from "./interfaces/IPublisher";
 import { ISubscriber } from "./interfaces/ISubscriber";
 
-const runObserver = () => {
-  console.log("====================OBSERVER: PROFESOR → ALUMNOS ====================");
+const runObserver = async () => {
+  console.log(
+    "====================OBSERVER: PROFESOR → ALUMNOS ===================="
+  );
 
   const professor: IPublisher = new Professor("Prof. García");
   const student1: ISubscriber = new Student("Ana");

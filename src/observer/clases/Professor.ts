@@ -18,12 +18,14 @@ export class Professor implements IPublisher {
     const index = this.subscribers.indexOf(subscriber);
     if (index > -1) {
       this.subscribers.splice(index, 1);
-      console.log(`${subscriber.constructor.name} se desuscribió de ${this.name}`);
+      console.log(
+        `${subscriber.constructor.name} se desuscribió de ${this.name}`
+      );
     }
   }
 
   publish(message: string): void {
     console.log(`${this.name} publica: ${message}`);
-    this.subscribers.forEach(subscriber => subscriber.update(message));
+    this.subscribers.forEach((subscriber) => subscriber.update(message));
   }
 }
