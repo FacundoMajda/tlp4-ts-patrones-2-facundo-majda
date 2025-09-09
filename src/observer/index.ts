@@ -23,7 +23,7 @@ const runObserver = async () => {
 
   professor.publish("Tarea 2: Leer capítulo 5 del libro");
 
-  console.log("====================");
+  console.log("====================\n");
 };
 
 export { runObserver };

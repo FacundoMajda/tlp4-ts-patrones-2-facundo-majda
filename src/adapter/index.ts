@@ -19,7 +19,7 @@ const runAdapter = async () => {
   const posts2 = await simpleHttpClient.getPosts();
   console.log(`USANDO AXIOS = ${JSON.stringify(posts2, null, 2)}`);
 
-  console.log("====================");
+  console.log("====================\n");
 };
 
 export { runAdapter };
